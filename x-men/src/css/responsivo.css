@@ -1,38 +1,40 @@
 @media (max-width: 1120px) {
+  /* Estilos para quando a largura da tela for no máximo 1120 pixels */
+
   .cabecalho .logo {
-    max-width: 190px;
+    max-width: 190px; /* Define a largura máxima do elemento de logo como 190 pixels */
   }
 
   .selecao-de-personagens {
-    flex-direction: column-reverse;
-    max-width: 430px;
-    margin: 0 auto;
+    flex-direction: column-reverse; /* Inverte a direção dos elementos filhos para coluna */
+    max-width: 430px; /* Define a largura máxima do elemento de seleção de personagens como 430 pixels */
+    margin: 0 auto; /* Centraliza o elemento horizontalmente */
   }
 
   .selecao-de-personagens .personagens {
-    margin-top: 37px;
+    margin-top: 37px; /* Define uma margem superior de 37 pixels */
   }
 
   .selecao-de-personagens .personagens .titulo {
-    font-size: 15px;
+    font-size: 15px; /* Define o tamanho da fonte do título como 15 pixels */
   }
 
   .selecao-de-personagens .lista-de-personagens {
-    gap: 9px;
+    gap: 9px; /* Define o espaçamento entre os elementos da lista como 9 pixels */
   }
 
   .selecao-de-personagens .personagem img {
-    width: 80px;
+    width: 80px; /* Define a largura da imagem do personagem como 80 pixels */
   }
 
   .personagem-selecionado .personagem-grande {
-    width: 350px;
-    height: 350px;
+    width: 350px; /* Define a largura do elemento de personagem grande como 350 pixels */
+    height: 350px; /* Define a altura do elemento de personagem grande como 350 pixels */
   }
 
   .personagem-selecionado .descricao-personagem {
-    width: 80%;
-    height: 80%;
-    margin: 20px auto;
+    width: 80%; /* Define a largura como 80% */
+    height: 80%; /* Define a altura como 80% */
+    margin: 20px auto; /* Define uma margem superior de 20 pixels e centraliza horizontalmente */
   }
 }
