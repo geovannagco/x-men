@@ -11,84 +11,87 @@ body {
 }
 
 body::before {
+  /* Adiciona uma camada de fundo com uma imagem */
   content: '';
-  background-image: url(../imagens/imagens/bg-desktop.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -1;
-  opacity: 0.2;
+  background-image: url(../imagens/imagens/bg-desktop.jpg); /* Define a imagem de fundo */
+  background-repeat: no-repeat; /* Impede a repetição da imagem */
+  background-size: cover; /* Faz com que a imagem cubra todo o elemento */
+  background-position: center; /* Centraliza a imagem */
+  width: 100%; /* Define a largura igual à largura do elemento pai */
+  height: 100%; /* Define a altura igual à altura do elemento pai */
+  position: absolute; /* Posiciona o elemento absolutamente em relação ao elemento pai */
+  z-index: -1; /* Define um valor de índice z para posicionamento em camadas */
+  opacity: 0.2; /* Define a opacidade do elemento para 20% */
 }
 
 .cabecalho {
-  display: flex;
-  justify-content: center;
+  display: flex; /* Torna o elemento um container flexível */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
 }
 
 .selecao-de-personagens {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  min-height: calc(100vh - 152px);
-  justify-content: center;
+  display: flex; /* Torna o elemento um container flexível */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  gap: 30px; /* Define o espaçamento entre os elementos filhos */
+  min-height: calc(100vh - 152px); /* Define a altura mínima do elemento */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
 }
 
 .selecao-de-personagens .lista-personagens {
-  display: flex;
+  display: flex; /* Torna o elemento um container flexível */
 
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
+  flex-wrap: wrap; /* Permite que os elementos filhos quebrem para uma nova linha */
+  gap: 30px; /* Define o espaçamento entre os elementos filhos */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
 }
 
 .selecao-de-personagens .personagens {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 585px;
-  gap: 25px;
+  display: flex; /* Torna o elemento um container flexível */
+  flex-direction: column; /* Define a direção dos elementos filhos como coluna */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  max-width: 585px; /* Define a largura máxima do elemento */
+  gap: 25px; /* Define o espaçamento entre os elementos filhos */
 }
 
 .selecao-de-personagens .personagens .titulo {
-  font-size: 20px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  border-bottom: 2px solid #47f4ff;
-  width: 100%;
-  text-align: center;
-}
-.lista-personagens .personagem img {
-  width: 100%;
-  height: 100%;
+  font-size: 20px; /* Define o tamanho da fonte */
+  letter-spacing: 4px; /* Define o espaçamento entre as letras */
+  text-transform: uppercase; /* Converte o texto para maiúsculas */
+  border-bottom: 2px solid #47f4ff; /* Adiciona uma borda na parte inferior */
+  width: 100%; /* Define a largura como 100% */
+  text-align: center; /* Centraliza o texto horizontalmente */
 }
 
+.lista-personagens .personagem img {
+  width: 100%; /* Define a largura como 100% */
+  height: 100%; /* Define a altura como 100% */
+}
+
+/* Adiciona uma sombra ao elemento de personagem selecionado */
 .lista-personagens .personagem.selecionado {
-  box-shadow: 0px 0px 24px 5px #0271f7;
+  box-shadow: 0px 0px 24px 5px #0271f7; /* Define a sombra com deslocamento horizontal e vertical de 0px, raio de desfoque de 24px, raio da sombra de 5px e cor da sombra #0271f7 */
 }
 
 .personagem-selecionado {
-  text-align: center;
-  max-height: 530px;
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
+  max-height: 530px; /* Define a altura máxima do elemento */
 }
 
 .personagem-selecionado .personagem-grande {
-  width: 430px;
-  height: 430px;
+  width: 430px; /* Define a largura como 430 pixels */
+  height: 430px; /* Define a altura como 430 pixels */
 }
 
 .personagem-selecionado .nome-personagem {
-  border-bottom: 2px solid #47f4ff;
-  letter-spacing: 4px;
-  text-transform: uppercase;
+  border-bottom: 2px solid #47f4ff; /* Adiciona uma borda na parte inferior */
+  letter-spacing: 4px; /* Define o espaçamento entre as letras */
+  text-transform: uppercase; /* Converte o texto para maiúsculas */
 }
 
 .personagem-selecionado .descricao-personagem {
-  font-size: 16px;
-  line-height: 22px;
-  text-align: center;
-  margin-top: 20px;
-  width: 420px;
+  font-size: 16px; /* Define o tamanho da fonte como 16 pixels */
+  line-height: 22px; /* Define a altura da linha como 22 pixels */
+  text-align: center; /* Centraliza o texto horizontalmente */
+  margin-top: 20px; /* Define uma margem superior de 20 pixels */
+  width: 420px; /* Define a largura como 420 pixels */
 }
