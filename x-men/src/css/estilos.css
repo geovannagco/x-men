@@ -13,7 +13,7 @@ body {
 body::before {
   /* Adiciona uma camada de fundo com uma imagem */
   content: '';
-  background-image: url(../imagens/imagens/bg-desktop.jpg); /* Define a imagem de fundo */
+  background-image: url(/x-men/src/imagens/bg-desktop.jpg); /* Define a imagem de fundo */
   background-repeat: no-repeat; /* Impede a repetição da imagem */
   background-size: cover; /* Faz com que a imagem cubra todo o elemento */
   background-position: center; /* Centraliza a imagem */
